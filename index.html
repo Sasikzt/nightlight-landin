@@ -2,30 +2,26 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Нічник "Місяць"</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Нічник Місяць</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Нічник "Місяць"</h1>
-    <p>Освітлення, яке створює затишок у вашому домі</p>
+    <p>Затишне світло у вашому домі</p>
+    <button onclick="openForm()">Замовити</button>
+    <div id="timer">Акція закінчиться через: <span id="countdown"></span></div>
   </header>
 
-  <section class="hero">
-    <button id="orderButton" class="btn">Замовити</button>
-  </section>
-
-  <div id="orderModal" class="modal">
-    <div class="modal-content">
-      <span id="closeModal" class="close">&times;</span>
-      <h2>Залиште заявку</h2>
-      <form>
-        <input type="text" placeholder="Ваше ім'я" required />
-        <input type="tel" placeholder="Ваш телефон" required />
-        <button type="submit">Надіслати</button>
-      </form>
-    </div>
+  <div id="popup-form" class="hidden">
+    <form>
+      <input type="text" placeholder="Ваше ім'я" required />
+      <input type="tel" placeholder="Телефон" required />
+      <select id="city"><option>Київ</option></select>
+      <select id="nova-poshta"><option>Відділення</option></select>
+      <button type="submit">Підтвердити замовлення</button>
+    </form>
   </div>
 
   <script src="script.js"></script>

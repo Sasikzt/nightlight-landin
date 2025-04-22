@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  background: url('moon-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.hidden { display: none; }
+#popup-form {
+  position: fixed; top: 20%; left: 50%; transform: translateX(-50%);
+  background: rgba(0,0,0,0.9); padding: 20px; border-radius: 8px;
+}
