@@ -1,60 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Нічник "Місяць"</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Нічник "Місяць"</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Нічник "Місяць"</h1>
-        <p>Освітлення, яке створює затишок у вашому домі</p>
-    </header>
+  <header>
+    <h1>Нічник "Місяць"</h1>
+    <p>Освітлення, яке створює затишок у вашому домі</p>
+  </header>
 
-    <section class="main">
-        <img src="moon-lamp.jpg" alt="Нічник Місяць" width="200">
-        <h2>Замов зараз та отримай знижку!</h2>
-        <button class="order-button">Замовити</button>
-    </section>
+  <section class="hero">
+    <button id="orderButton" class="btn">Замовити</button>
+  </section>
 
-    <section class="countdown">
-        🔥 Акція закінчиться через: <span id="timer">01:59:08</span>
-    </section>
-
-    <section class="trust">
-        <h3>Нам довіряють</h3>
-        <p>Більше 500+ задоволених клієнтів</p>
-        <div>👍 🧾</div>
-    </section>
-
-    <section class="steps">
-        <h3>Як ми працюємо</h3>
-        <ol>
-            <li>Ви залишаєте заявку</li>
-            <li>Ми телефонуємо для підтвердження</li>
-            <li>Надсилаємо товар Новою Поштою</li>
-        </ol>
-    </section>
-
-    <!-- Модальне вікно -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Залиште заявку</h2>
-        <form id="orderForm">
-          <label>Ім’я:</label>
-          <input type="text" name="name" required>
-          <label>Телефон:</label>
-          <input type="tel" name="phone" required>
-          <label>Коментар:</label>
-          <textarea name="comment"></textarea>
-          <button type="submit">Надіслати</button>
-        </form>
-      </div>
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Залиште заявку</h2>
+      <form>
+        <input type="text" placeholder="Ваше ім'я" required />
+        <input type="tel" placeholder="Ваш телефон" required />
+        <button type="submit">Надіслати</button>
+      </form>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
