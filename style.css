@@ -1,0 +1,56 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f8f8f8;
+}
+header {
+  background: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #e0e7ff;
+}
+.hero img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+.cta {
+  background: #ff3333;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.countdown {
+  text-align: center;
+  font-size: 24px;
+  background: #fff0f0;
+  padding: 20px;
+}
+.trust, .how-it-works {
+  background: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.trust img, .how-it-works img {
+  width: 60px;
+  margin: 10px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #003366;
+  color: white;
+}
